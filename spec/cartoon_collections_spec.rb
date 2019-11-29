@@ -35,7 +35,9 @@ describe "Cartoon Collections" do
 summon_captain_planet_calls= ["carrot", "cucumber", "pepper"]
   summon_captain_planet_calls(planet_calls)#=>[ ["carrot", "cucumber", "pepper"]]
    
-   
+   def summon_captain_planet_calls
+     summon_captain_planet_calls(planet_calls[ ["carrot", "cucumber", "pepper"| ]).collect{|n|}
+     #=> ["carrot", "cucumber", "pepper"]
    
     it "capitalizes each element and adds an exclamation mark (test 1)" do
       fruits = ["apple", "banana", "orange"]
