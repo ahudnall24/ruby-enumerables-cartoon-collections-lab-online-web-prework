@@ -17,10 +17,10 @@ describe "Cartoon Collections" do
       expect(output).to match(/4 *Sleepy/)
     end
     
-    dwarves=[11,22,31,224,44].each_with_index { |val,index| puts "index: #{index} for #{val}" if val < 30}
-  index: 0 for 11
-  index: 1 for 22
-  => [11, 22, 31, 224, 44]
+    dwarves=[o,1,2,3,4].each_with_index { |val,index| puts "index: #{index} for #{val}" if val < 10}
+  index: 0 for 10
+  index: 1 for 4
+  => [0,1,2,3,4]
 
   end
 
