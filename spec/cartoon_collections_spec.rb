@@ -16,6 +16,12 @@ describe "Cartoon Collections" do
       expect(output).to match(/3.*Bashful/)
       expect(output).to match(/4 *Sleepy/)
     end
+    
+    dwarves=[11,22,31,224,44].each_with_index { |val,index| puts "index: #{index} for #{val}" if val < 30}
+  index: 0 for 11
+  index: 1 for 22
+  => [11, 22, 31, 224, 44]
+
   end
 
   describe "#summon_captain_planet" do
