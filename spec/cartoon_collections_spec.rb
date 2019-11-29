@@ -3,7 +3,7 @@ require "spec_helper"
 describe "Cartoon Collections" do
   describe "#roll_call_dwarves" do
     it "prints out the 7 dwarfs in a numbered list" do
-      dwarves = ["Dopey", "Grumpy", "Bashful"]
+      dwarves = ["Dopey", "Grumpy", "Bashful","Sleepy"]
 
       output = capture_stdout do
         roll_call_dwarves(dwarves)
@@ -14,6 +14,7 @@ describe "Cartoon Collections" do
       expect(output).to match(/1.*Dopey/)
       expect(output).to match(/2.*Grumpy/)
       expect(output).to match(/3.*Bashful/)
+      expect(output).to match(/4 *Sleepy/)
     end
   end
 
