@@ -32,6 +32,11 @@ describe "Cartoon Collections" do
       expect(result.length).to eq(3)
     end
 
+summon_captain_planet_calls= ["carrot", "cucumber", "pepper"]
+  summon_captain_planet_calls(planet_calls)#=>[ ["carrot", "cucumber", "pepper"]]
+   
+   
+   
     it "capitalizes each element and adds an exclamation mark (test 1)" do
       fruits = ["apple", "banana", "orange"]
       result = summon_captain_planet(fruits)
