@@ -54,9 +54,29 @@ summon_captain_planet_calls= ["carrot", "cucumber", "pepper"]
 
   describe "#long_planeteer_calls" do
     it "returns true if any calls are longer than 4 characters" do
-      calls_long = ["axe", "earth", "wind", "fire"]
+      calls_long = [short_words = ["puff", "go", "two"]
+long_planeteer_calls(short_words)
+#=> false
+ 
+assorted_words = ["two", "go", "industrious", "bop"]
+long_planeteer_calls(assorted_words)
+#=> true]
       expect(long_planeteer_calls(calls_long)).to eq(true)
     end
+    
+    short_words = [short_words = ["puff", "go", "two"]
+long_planeteer_calls(short_words)
+#=> false
+ 
+assorted_words = ["two", "go", "industrious", "bop"]
+long_planeteer_calls(assorted_words)
+#=> true]
+long_planeteer_calls(short_words)
+#=> false
+ 
+assorted_words = ["two", "go", "industrious", "bop"]
+long_planeteer_calls(assorted_words)
+#=> true
 
     it "returns false if all calls are 4 characters or less" do
       calls_short = ["wind", "fire", "tree", "axe", "code"]
